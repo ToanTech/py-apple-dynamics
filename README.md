@@ -15,7 +15,7 @@
 
 ## 3 用户支持和讨论论坛
 
-- 用户支持QQ群**<u>（桌面级四足机器狗交流群 PY PY DOG）：1071643412</u>**
+- 用户支持QQ群**（桌面级四足机器狗交流群 PY PY DOG）：1071643412**
 - 讨论论坛（机器狗工坊）：http://www.leggedrobot.cn/forum.php?mod=forumdisplay&fid=44
 
 ## 4 **Py-Apple Dynamics **项目搭建方法
@@ -24,13 +24,13 @@
 - 第二步：访问 [Py-Apple Controller Github](https://github.com/ToanTech/py-apple-controller),选择并根据里面指导制造主控板
 - 第三步：根据 [此处指导](guidetoinstall.md) 安装好四足机器人全部硬件
 - 第四步：下载 Github中 [发行版]()文件夹中的压缩包
-- 第五步：根据[此处教程](https://github.com/ToanTech/py-apple-controller)烧录四足机器人控制程序
+- 第五步：根据[此处教程](https://www.bilibili.com/video/BV1mv411B7dR/)烧录四足机器人控制程序
 - 第六步：根据[此处教程](https://www.bilibili.com/video/BV1Qg4y1v78G/)遥控使用四足机器人
 
 ## 5 开源开发信息
 
 - Py-Apple Dynamics Github仓库：https://github.com/ToanTech/py-apple-dynamics
-- [Py-Apple Dynamics 二次开发教程]()
+- [Py-Apple Dynamics 二次开发教程](http://www.leggedrobot.cn/forum.php?mod=viewthread&tid=48)
 - 菠萝狗开源四足机器人项目开发者交流QQ群：<u>**960502665**</u>
 
 ## 6 **Py-Apple Dynamics** 贡献者
@@ -41,9 +41,9 @@
 
 ## 7 如何参与到 Py-Apple Dynamics 开源项目开发团队中
 
--  Py-Apple Dynamics 项目是开源的，我们鼓励参与和贡献代码：[点击查看如何在Py-Apple Dynamics Github 仓库中贡献的指导]()
+-  Py-Apple Dynamics 项目是开源的，我们鼓励参与和贡献代码：[点击查看如何在Py-Apple Dynamics Github 仓库中贡献的指导](http://www.leggedrobot.cn/forum.php?mod=viewthread&tid=49&extra=page%3D1)
 -  需要的功能设想和bug可以发布到 Issue list [点击进入 ISSUE LIST](https://github.com/ToanTech/py-apple-dynamics/issues)
--  参与完善项目文字资料和使用教程：[点击查看如何参与完善项目资料]()
+-  参与完善项目文字资料和使用教程：[点击查看如何参与完善项目资料（此贴中的二楼）](http://www.leggedrobot.cn/forum.php?mod=viewthread&tid=49&extra=page%3D1)
 -  有其他参与问题需要联系项目管理及贡献者 ：[点击查看联系方式](contributors_m.md)
 
 ## 8 开源协议
@@ -64,5 +64,6 @@
 6. 自稳定
 7. 串联腿控制
 8. 并连腿控制
-9. WIFI遥控
-10. WIFI参数调节
+9. 动态运动参数调整
+10. WIFI遥控
+11. WIFI参数调节
