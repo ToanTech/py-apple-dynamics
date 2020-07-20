@@ -18,7 +18,7 @@
 - 用户支持QQ群（桌面级四足机器狗交流群 PY PY DOG）：**1071643412**
 - 讨论论坛（机器狗工坊）：http://www.leggedrobot.cn/forum.php?mod=forumdisplay&fid=44
 
-## 4 **Py-Apple Dynamics **项目搭建方法
+## 4 Py-Apple Dynamics 项目搭建方法
 
 - 第一步：访问 [Py-Apple Structure Github](https://github.com/ToanTech/py-apple-structure)，选择并根据里面指导打印并配齐机械结构和零件
 - 第二步：访问 [Py-Apple Controller Github](https://github.com/ToanTech/py-apple-controller),选择并根据里面指导制造主控板
