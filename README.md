@@ -23,7 +23,7 @@
 - 第一步：访问 [Py-Apple Structure Github](https://github.com/ToanTech/py-apple-structure)，选择并根据里面指导打印并配齐机械结构和零件
 - 第二步：访问 [Py-Apple Controller Github](https://github.com/ToanTech/py-apple-controller),选择并根据里面指导制造主控板
 - 第三步：根据 [此处指导](guidetoinstall.md) 安装好四足机器人全部硬件
-- 第四步：下载 Github中**Py Apple Dynamics V4.0(最新版)**文件夹中的文件
+- 第四步：下载 Github中<u>Py Apple Dynamics V4.0(最新版)</u>文件夹中的文件
 - 第五步：根据[此处教程](https://www.bilibili.com/video/BV1mv411B7dR/)烧录四足机器人控制程序
 - 第六步：根据[此处教程](https://www.bilibili.com/video/BV1Qg4y1v78G/)遥控使用四足机器人
 
