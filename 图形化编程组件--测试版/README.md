@@ -6,7 +6,7 @@
 
 第二步，加载编程包，操作详见参考操作视频：https://www.bilibili.com/video/BV1uy4y1C7GK
 
-第三步：下载 [Py-apple Dynamics Dev Tool V0.1.1 BETA 3-6.5 发布版 ](https://github.com/ToanTech/py-apple-dynamics/tree/master/Py-apple Dynamics Dev Tool) 软件，按照软件提示操作，对机器狗上传图形化编程软件所生成的Py文件
+第三步：下载 [Py-apple Dynamics Dev Tool V0.1.1 BETA 3-6.5 发布版 ](https://github.com/ToanTech/py-apple-dynamics/tree/master/Py-apple%20Dynamics%20Dev%20Tool) 软件，按照软件提示操作，对机器狗上传图形化编程软件所生成的Py文件
 
 第四步：按控制板上 RST/EN 复位机器狗，机器狗将自动开始执行你上传的图形化编程程序，下次重新上电时也会自动执行图形化编程的程序。
 
