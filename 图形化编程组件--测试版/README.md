@@ -2,9 +2,9 @@
 
 要使用图形化编程，**请先确保你的机器狗已经完成调中并完成步态效果调试。**
 
-第一步：安装“MPython图形化编程软件”文件夹中的exe,注意选择32位和64位
+第一步：安装“MPython图形化编程软件”文件夹中的 exe（注意，文件夹中采用分卷压缩，因此四个文件都需要全部下载）
 
-第二步，加载编程包，操作详见参考操作视频：https://www.bilibili.com/video/BV1uy4y1C7GK
+第二步：下载”MPython 图形化编程导入包“ 中的 1.zip ，加载编程包，操作详见参考操作视频：https://www.bilibili.com/video/BV1uy4y1C7GK
 
 第三步：下载 [Py-apple Dynamics Dev Tool V0.1.1 BETA 3-6.5 发布版 ](https://github.com/ToanTech/py-apple-dynamics/tree/master/Py-apple%20Dynamics%20Dev%20Tool) 软件，按照软件提示操作，对机器狗上传图形化编程软件所生成的Py文件
 
