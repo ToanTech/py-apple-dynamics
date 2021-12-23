@@ -19,19 +19,25 @@
 
 - QQ群1（桌面级四足机器狗交流群 PY PY DOG）：**1071643412**
 - QQ群2（无刷四足机器狗交流群 PY PY DOG）：**1005923565**
-- 讨论论坛（机器狗工坊）：http://www.leggedrobot.cn/forum.php?mod=forumdisplay&fid=44
 
 ## 4 Py-Apple Dynamics 项目搭建方法
 
-- 第一步：访问 [Py-Apple Structure Github](https://github.com/ToanTech/py-apple-structure)，选择并根据里面指导打印并配齐机械结构和零件
-- 第二步：访问 [Py-Apple Controller Github](https://github.com/ToanTech/py-apple-controller),选择并根据里面指导制造主控板
-- 第三步：根据 [此处指导](guidetoinstall.md) 安装好四足机器人全部硬件
-- 第四步：下载 Github中   Py Apple Dynamics V6.5(最新版)   文件夹中的文件
-- 第五步：根据[此处教程](https://www.bilibili.com/video/BV1b5411L7ks?p=6)烧录四足机器人控制程序
-- 第六步：根据
-- [舵机标定教程](https://www.bilibili.com/video/BV1b5411L7ks?p=10)、[重心标定和踏步效果调试](https://www.bilibili.com/video/BV1b5411L7ks?p=11)、[小跑和慢性步态效果调试](https://www.bilibili.com/video/BV1b5411L7ks?p=12)调试及标定四足机器人
-- 第七步：根据[此处教程](https://www.bilibili.com/video/BV1b5411L7ks?p=13)遥控四足机器人，完成四足机器人配置
-- **更进一步...如需二次开发**，访问[Py-Apple Dynamics 二次开发教程](https://www.bilibili.com/video/BV1Ut4y1D7s2/)
+- http://padog.com.cn/ 是本项目的详细文档站，按照此处教程搭建项目，若有问题，请加入 **3 用户支持和讨论论坛** 中的Q群细聊
+
+- TB店铺[灯哥开源](https://shop564514875.taobao.com/)也可找到**全套套件可供采买**
+
+- 项目文件说明：
+
+  | 文件夹名                         | 功能                                                         |
+  | -------------------------------- | ------------------------------------------------------------ |
+  | Py Apple Dynamics V7.3 SRC       | 菠萝狗7.3版本代码                                            |
+  | Py-apple Dynamics Dev Tool(V7.3) | 快速烧录工具，可以利用它直接把ESP32环境一键配置完成并自动烧录菠萝狗代码 |
+  | 软件环境                         | UpyCraft编程IDE+控制板串口驱动                               |
+  | OpenMV支持                       | OpenMV连接菠萝狗实现图像识别功能的例程                       |
+  | 图形化编程组件--测试版           | 菠萝狗的图形化积木编程环境                                   |
+  | 古早版本                         | 老版本菠萝狗代码                                             |
+  
+
 
 ## 5 **Py-Apple Dynamics** 贡献者
 
@@ -41,11 +47,8 @@
 
 ## 6 如何参与到 Py-Apple Dynamics 开源项目开发团队中
 
--  Py-Apple Dynamics 项目是开源的，我们鼓励参与和贡献代码：[点击查看如何在Py-Apple Dynamics Github 仓库中贡献的指导](http://www.leggedrobot.cn/forum.php?mod=viewthread&tid=49&extra=page%3D1)
+-  Py-Apple Dynamics 项目是开源的，我们鼓励参与和贡献代码，希望参与贡献代码的请加入 **3 用户支持和讨论论坛** 中的Q群细聊
 -  需要的功能设想和bug可以发布到 Issue list [点击进入 ISSUE LIST](https://github.com/ToanTech/py-apple-dynamics/issues)
--  参与完善项目文字资料和使用教程：[点击查看如何参与完善项目资料（此贴中的二楼）](http://www.leggedrobot.cn/forum.php?mod=viewthread&tid=49&extra=page%3D1)
--  有其他参与问题需要联系项目管理及贡献者 ：[点击查看联系方式](contributors_m.md)
--  菠萝狗开源四足机器人项目开发者交流QQ群：<u>**960502665**</u>
 
 ## 7 开源协议
 
@@ -55,23 +58,26 @@
 
 ## 8 当前 Py-Apple Dynamics 实现的功能
 
-目前的最新的版本是  <u>Py-Apple Dynamics V6.8</u> ，请在  Py Apple Dynamics V6.8 文件夹中下载，最新开源代码存放于根目录下，可自由下载。古早版本 文件夹中存放着之前的老版本代码, 包括早期测试用的 Arduino 版本、基于 Stm32 F4的 Pyboard 版本、以及早期外围程序（地面站、红外遥控）等等。
+目前的最新的版本是  <u>Py-Apple Dynamics V7.3</u> ，最新开源代码存放于根目录下，可自由下载。古早版本 文件夹中存放着之前的老版本代码, 包括早期测试用的 Arduino 版本、基于 Stm32 F4的 Pyboard 版本、以及早期外围程序（地面站、红外遥控）等等。
 
-| 运动性能                     | 遥控功能       | 平衡性能         | 二次开发接口       | AI 功能          |
+| 运动性能                     | 控制功能       | 平衡性能         | 二次开发接口       | AI 功能          |
 | ---------------------------- | -------------- | ---------------- | ------------------ | ---------------- |
 | 8DOF 运动学逆解              | 航模遥控器控制 | 静态自稳         | 串口通讯接口       | 巡线程序         |
 | VMC算法                      | 网页在线遥控   | WALK步态动态自稳 | 少儿图形化积木编程 | 颜色识别跟踪程序 |
-| 空间连杆角度补偿             | 网页在线调参   | 摔倒自恢复       |                    |                  |
-| 俯仰、滚转姿态控制           |                |                  |                    |                  |
-| 高度控制                     |                |                  |                    |                  |
+| 空间连杆角度补偿             | 网页在线调参   |                  |                    |                  |
+| 俯仰、滚转姿态控制           | 低电量报警     |                  |                    |                  |
+| 高度控制                     | 蜂鸣器提示音   |                  |                    |                  |
 | 支持自行调节机械结构尺寸参数 |                |                  |                    |                  |
 
-**Py-Apple Dynamics V6.8 相对于上个版本增加的功能 2021/8/17**
+**Py-Apple Dynamics V7.3 相对于上个版本增加的功能 2021/12/23**
 
-1. 网页遥控引入虚拟摇杆，增加控制灵活性和精确性
+1. 改善浏览器兼容性，解决部分安卓浏览器的卡顿问题
+2. 将串口控制和航模遥控功能直接整合进设置界面中，可以从设置界面直接打开，无需二次烧录附加程序
+3. 优化在ESP32下的运行速度
+4. 支持240MHZ ESP双核模式
+5. 增加提示音功能
+6. 支持ADC读取电压功能，低电量时自动关断舵机并蜂鸣，保证安全使用
+7. 更新步态生成器(padog.py,PA_GAIT.py)，支持摆动腿延伸，作为后面增加足底传感器的基础
+8. 一些小的bug fixed.
 
-   ![image1](/pic/6.8index.png)
-
-2. 增加陀螺仪自动校准功能，无需安装陀螺仪时机械校准
-
-3. 一些小的bug fixed.
+​     ![image1](/pic/Ver73.png)

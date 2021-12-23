@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html lang="zh-CN">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <title>菠萝万能控 V6.5</title>
+    <style type="text/css">
+        *{
+            padding:0;
+            margin:0;
+        }
+        a{
+          display: block;width: 100%;height: 100%;line-height: 100px;font-size: 14px;text-align: center;text-decoration:none;color:#000000;
+        }
+        .content{
+            width: 200px;height: 200px;position: relative;margin:50px auto;left: 0;top:50%;bottom: 0;right:0;
+            box-shadow: 0px 0px 550px rgba(255, 255, 255, 0.3) inset,0px 0px 5px #FFFFFF;
+        }
+        .quartercircle{
+            position:absolute;width: 100px;height: 100px;-webkit-border-radius: 100px 0 0 0;
+        }
+        .divLeft{
+            top: 25%;left: -10%; transform:rotate(-45deg);background-color: bisque ;
+        }
+        .divTop{
+            top: -10%;left: 25%; transform:rotate(45deg);background-color: burlywood ;
+        }
+        .divRight{
+            top: 25%;left: 60%;transform:rotate(135deg);background-color: darkgray ;
+        }
+        .divBottom{
+            top: 60%;left: 25%;transform:rotate(-135deg);background-color: darkkhaki ;
+        }
+        .circle{
+          width:50%;height:50%;position: absolute;z-index: 100;top:0%;left:0%;bottom:0;right: 0;margin:auto;border-radius: 100%;background-color: #889900;text-align: center;
+        }
+        .circle span{
+            display: block;width: 100%;height: 100%;line-height: 200px;font-size: 24px;
+        }
+        .quartercircle a{
+            position: absolute;width: 100%;height: 100%;
+            background: #888888;
+        }
+        .quartercircle a:hover{
+            background: #8BFF7C;
+        }
+       .dimSlide { transform: scaleX(2) rotate(0deg); width: 200px;position: relative}
+    </style>
+<script language="javascript">
+function dimSetp(evt) {
+	var me1
+  var xmlhttp1=new XMLHttpRequest();   
+	me1 = evt.target;
+  xmlhttp1.open("GET","pit=" + me1.value,true); xmlhttp1.send()
+} 
+
+function dimSetr(evt) {
+	var me1
+  var xmlhttp1=new XMLHttpRequest();   
+	me1 = evt.target;
+  xmlhttp1.open("GET","rol=" + me1.value,true); xmlhttp1.send()
+} 
+function dimSeth(evt) {
+	var me1
+  var xmlhttp1=new XMLHttpRequest();   
+	me1 = evt.target;
+  xmlhttp1.open("GET","hgt=" + me1.value,true); xmlhttp1.send()
+} 
+function dimSety(evt) {
+	var me1
+  var xmlhttp1=new XMLHttpRequest();   
+	me1 = evt.target;
+  xmlhttp1.open("GET","yst=" + me1.value,true); xmlhttp1.send()
+} 
+
+function foward() {
+	var me1
+  var xmlhttp1=new XMLHttpRequest();   
+  xmlhttp1.open("GET","key=GO" ,true); xmlhttp1.send()
+}
+
+function back() {
+	var me1
+  var xmlhttp1=new XMLHttpRequest();   
+  xmlhttp1.open("GET","key=BACK" ,true); xmlhttp1.send()
+}
+
+function left() {
+	var me1
+  var xmlhttp1=new XMLHttpRequest();   
+  xmlhttp1.open("GET","key=LEFT" ,true); xmlhttp1.send()
+} 
+function right() {
+	var me1
+  var xmlhttp1=new XMLHttpRequest();   
+  xmlhttp1.open("GET","key=RIGHT" ,true); xmlhttp1.send()
+} 
+
+function step() {
+	var me1
+  var xmlhttp1=new XMLHttpRequest();   
+  xmlhttp1.open("GET","key=ch" ,true); xmlhttp1.send()
+} 
+
+function stop() {
+	var me1
+  var xmlhttp1=new XMLHttpRequest();   
+  xmlhttp1.open("GET","key=dm" ,true); xmlhttp1.send()
+} 
+
+</script> 
+</head> 
+<body>
+<center><h1>菠萝万能控 6.5</h1></center>
+<center><h3>By 灯哥</h3></center>
+<center><h4>(点击“踏步”，再按油门 +或- 机器人会动起来)</h4></center>
+<center><a style="width:100px; height:30px;" onclick="stop()">
+    <button style="width:100px; height:30px;"> 停止 </button>
+</a></center>
+<div class="content" style="">
+    <form action="/" method="get" accept-charset="utf-8"> 
+    <div class="quartercircle divLeft" style="">
+      <a onclick="left()" style="background: no-repeat center;transform:rotate(45deg);">左转</a>
+    </div>
+    <div class="quartercircle divTop" style="">
+        <a onclick="foward()" style="background: no-repeat center;transform:rotate(-45deg);">油门 +</a>
+    </div>
+    <div class="quartercircle divRight" style="">
+        <a onclick="right()" style="background: no-repeat center;transform:rotate(-135deg);">右转</a>
+    </div>
+    <div class="quartercircle divBottom" style="">
+        <a onclick="back()" style="display:block;position:absolute;z-index:50;background: no-repeat center;transform:rotate(135deg);">油门 -</a>
+    </div>
+    <div class="circle" style="background-color: red;"><a onclick="step()">踏步（复位）</a></div>
+  </form>
+</div>
+<center><h4>- 俯仰角 +</h></enter>
+<center><input class= "dimSlide" type="range" id="dimSlide1" min="-10" max="10" step="0" value="0" onclick="dimSetp(event)" oninput="dimSetp(event)"></center><br />
+<br />
+<center><h4>- 横滚角 +</h></enter>
+<center><input class= "dimSlide" type="range" id="dimSlide2" min="-10" max="10" step="0" value="0" onclick="dimSetr(event)" oninput="dimSetr(event)"></center>
+<br />
+<br />
+<center><h4>- 后前平移 +</h></enter>
+<center><input class= "dimSlide" type="range" id="dimSlide3" min="-20" max="20" step="0" value="0" onclick="dimSety(event)" oninput="dimSety(event)"></center>
+<br />
+<br />
+<center><h4>- 高度调节 +</h></enter>
+<center><input class= "dimSlide" type="range" id="dimSlide4" min="100" max="120" step="0" value="110" onclick="dimSeth(event)" oninput="dimSeth(event)" ></center>
+<br />
+<br />
+<center><a style="width:200px; height:30px;" href="?key=sc">
+    <button style="width:200px; height:30px;"> 保存为默认姿态角度 </button>
+</a></center>
+<br />
+<center><a style="width:200px; height:50px;" href="?key=ss">
+    <button style="width:200px; height:50px;"> 标定及设置 </button>
+</a></center>
+<br />
+<center><a style="width:200px; height:30px;" href="?key=gy">
+    <button style="width:200px; height:30px;"> 陀螺仪 开/关 </button>
+</a></center>
+<br />
+<center><a style="width:200px; height:30px;" href="?key=qh">
+<button style="width:200px; height:30px;"> 小跑/慢走越障 步态切换 </button>
+</a></center>
+<br />
+</body>
+</html>
+
+
+
+
