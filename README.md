@@ -52,9 +52,7 @@
 
 ## 7 开源协议
 
-**Py-Apple Dynamics** 项目采用 Apache 许可证，版本 2.0
-
-[点击查看完整协议文档](LICENSE)
+**Py-Apple Dynamics** 项目采用 [GPL-3.0 License](https://github.com/ToanTech/Inverted_Pendulum_DengFOC/blob/main/LICENSE)
 
 ## 8 当前 Py-Apple Dynamics 实现的功能
 
