@@ -19,6 +19,7 @@
 
 - QQ群1（桌面级四足机器狗交流群 PY PY DOG）：**1071643412**
 - QQ群2（无刷四足机器狗交流群 PY PY DOG）：**1005923565**
+- 官方配置文档：http://padog.com.cn/#/
 
 ## 4 Py-Apple Dynamics 项目搭建方法
 
