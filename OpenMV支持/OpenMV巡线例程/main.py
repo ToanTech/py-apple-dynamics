@@ -43,7 +43,7 @@ def loop(tt):
 
 
 t.init(period=50,mode=Timer.PERIODIC,callback=OpenMV_Run)
-padog.gesture(padog.in_pit,padog.in_rol,padog.in_y)
+padog.gesture(0,0,padog.in_y)
 padog.speed=0.045
 while True:
   padog.mainloop()
